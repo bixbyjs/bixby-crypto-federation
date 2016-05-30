@@ -62,7 +62,7 @@ exports = module.exports = function(container, logger) {
   for (i = 0, len = specs.length; i < len; ++i) {
     spec = specs[i];
   
-    if (spec.implements.indexOf('http://i.bixbyjs.org/crypto/keyring/findFunc') !== -1) {
+    if (spec.implements.indexOf('http://i.bixbyjs.org/crypto/Keyring/findFunc') !== -1) {
       // This specification declares a function for finding keys used for
       // cyrptographic purposes.  Create the function and register it with the
       // `PluggableKeyring` instance.

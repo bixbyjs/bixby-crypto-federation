@@ -1,6 +1,7 @@
 exports = module.exports = function crypto_federation(id) {
   var map = {
-    'keyring': './xom/keyring'
+    'keyring': './xom/keyring',
+    'secret/find': './secret/find'
   };
   
   var mid = map[id];
@@ -11,4 +12,5 @@ exports = module.exports = function crypto_federation(id) {
 
 exports.used = function(container) {
   container.add('keyring');
+  container.add('secret/find');
 };
