@@ -57,6 +57,8 @@ exports = module.exports = function(container, logger) {
   
   console.log('CREATE KEYRING!!!');
   
+  // TODO
+  /*
   var specs = container.specs()
     , spec, plugin, i, len;
   for (i = 0, len = specs.length; i < len; ++i) {
@@ -72,6 +74,7 @@ exports = module.exports = function(container, logger) {
       logger.info('Loaded plug-in for finding cryptographic keys: ' + (plugin.name || 'unknown'));
     }
   }
+  */
   
   return keyring;
 }
